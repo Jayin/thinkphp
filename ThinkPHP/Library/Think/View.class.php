@@ -8,6 +8,11 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
+// 
+// 2014.11.30 Change :
+//          Remove : X-Powered-By ThinkPHP
+// author: Jayin Ton
+// 
 namespace Think;
 /**
  * ThinkPHP 视图类
@@ -90,7 +95,6 @@ class View {
         // 网页字符编码
         header('Content-Type:'.$contentType.'; charset='.$charset);
         header('Cache-control: '.C('HTTP_CACHE_CONTROL'));  // 页面缓存控制
-        header('X-Powered-By:ThinkPHP');
         // 输出模板文件
         echo $content;
     }
